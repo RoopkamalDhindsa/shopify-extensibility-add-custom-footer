@@ -136,3 +136,7 @@ Press Ctrl+C to stop the app development environment and then, run below in term
 npm run shopify app deploy
 ```
 
+## Step 4: Edit Footer data.
+
+By default it will add some links and data to footer. 
+You can change by editing the file `/extensions/custom-footer/src/Extension.jsx`.
