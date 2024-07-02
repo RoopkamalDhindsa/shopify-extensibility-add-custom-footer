@@ -152,6 +152,9 @@ un-install the app from dev store.
 
 run below to release new version of app and update access scope of app
 
+```shell
+npm run shopify app deploy
+```
 
 => step 5: 
 
@@ -162,7 +165,7 @@ npm run shopify app dev
 ```
 
 this will allow you to install the app again.
-
+Skip deploy step below and setup footer in last step of app.
 
 
 
