@@ -127,6 +127,44 @@ Make sure to replace the `YOUR_CHECKOUT_PROFILE_ID_HERE` with the ID you receive
 }
 ```
 
+If you are receiving an error about access denied then you may have to update the access scope for the app in the `app's toml file`.
+
+=> step 1: 
+
+press ctrl +C to stop app dev environment
+
+=> step 2:
+
+open file named `shopify.app.YOUR-APP-NAME.toml`.
+
+update the access scope with `read_checkout_branding_settings,write_checkout_branding_settings`. It will be like `scopes = "read_checkout_branding_settings,write_checkout_branding_settings"`.
+
+```shell
+scopes = "read_checkout_branding_settings,write_checkout_branding_settings"
+```
+
+=> step 3: 
+
+un-install the app from dev store.
+
+
+=> step 4: 
+
+run below to release new version of app and update access scope of app
+
+
+=> step 5: 
+
+again run below:
+
+```shell
+npm run shopify app dev
+```
+
+this will allow you to install the app again.
+
+
+
 
 ## Step 3: Deploy the app.
 
